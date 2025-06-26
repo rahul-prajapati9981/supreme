@@ -1,11 +1,40 @@
 const ContactSection = () => {
     return (
-        <section className="bg-[#0C1A36] text-white py-20 px-4">
-            <div className="bg-red-500 text-white p-4">Tailwind Test</div>
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-                {/* Left: Form */}
+        <section className="bg-[#0067B1] text-white py-20 px-4">
+            <div className="max-w-[1099px] h-[433px] mx-auto mt-[88px] ml-[132px] grid md:grid-cols-2 gap-12">
+                {/* Left: Contact Info */}
+                <div className="space-y-6">
+                    <div>
+                        <h3 className="text-lg font-medium">Address :</h3>
+                        <p className="text-white text-opacity-90 text-sm">
+                            110, 16th Road, Chembur,<br /> Mumbai - 400071
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="text-lg font-medium">Phone :</h3>
+                        <a
+                            href="tel:+912225208822"
+                            className="text-white text-opacity-90 text-sm hover:underline"
+                        >
+                            +91 22 25208822
+                        </a>
+                    </div>
+                    <div>
+                        <h3 className="text-lg font-medium">Email :</h3>
+                        <a
+                            href="mailto:info@supremegroup.co.in"
+                            className="text-white text-opacity-90 text-sm hover:underline"
+                        >
+                            info@supremegroup.co.in
+                        </a>
+                    </div>
+                </div>
+
+                {/* Right: Form */}
                 <div>
-                    <h2 className="text-3xl lg:text-4xl font-semibold mb-4">Get in touch</h2>
+                    <h2 className="text-[48px] font-light leading-none mb-4">
+                        <span className="font-semibold">Get in touch</span>
+                    </h2>
                     <div className="h-[2px] w-12 bg-white mb-8"></div>
                     <form className="space-y-6">
                         <input
@@ -35,34 +64,6 @@ const ContactSection = () => {
                             Send
                         </button>
                     </form>
-                </div>
-
-                {/* Right: Contact Info */}
-                <div className="space-y-6">
-                    <div>
-                        <h3 className="text-lg font-medium">Address :</h3>
-                        <p className="text-white text-opacity-90 text-sm">
-                            110, 16th Road, Chembur,<br /> Mumbai - 400071
-                        </p>
-                    </div>
-                    <div>
-                        <h3 className="text-lg font-medium">Phone :</h3>
-                        <a
-                            href="tel:+912225208822"
-                            className="text-white text-opacity-90 text-sm hover:underline"
-                        >
-                            +91 22 25208822
-                        </a>
-                    </div>
-                    <div>
-                        <h3 className="text-lg font-medium">Email :</h3>
-                        <a
-                            href="mailto:info@supremegroup.co.in"
-                            className="text-white text-opacity-90 text-sm hover:underline"
-                        >
-                            info@supremegroup.co.in
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>

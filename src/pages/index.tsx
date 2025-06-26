@@ -12,7 +12,6 @@ export default function Home() {
                 <title>Supreme Group</title>
             </Head>
             <Navbar />
-            <div className="bg-primary text-white p-4">Tailwind is working!</div>
             <main className="mt-16">
                 <IntroVideo />
                 <VehicleSwitcher/>
