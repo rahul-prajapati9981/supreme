@@ -1,40 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+A modern frontend implementation of the Supreme Group website using **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Project Setup
 
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/rahul-prajapati9981/supreme.git
+cd supreme
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies
+2. npm install
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Run the development server
+3. npm run dev
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Open your browser and navigate to:
+4. http://localhost:3000
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+5. 🧩 Component Architecture
+components/
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Navbar.tsx: Sticky top navigation with responsive logo.
 
-## Learn More
+Hero.tsx: Intro video section with headline overlay.
 
-To learn more about Next.js, take a look at the following resources:
+VehicleSwitcher.tsx: Section for switching between Passenger/Commercial vehicle videos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+ContactSection.tsx: Contact form and contact info grid.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Footer.tsx: Multi-column footer with links.
 
-## Deploy on Vercel
+pages/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+index.tsx: Main entry point combining all sections.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+public/
+
+Contains static assets like images and videos.
+
+6. 📱 Responsive Design Strategy
+Tailwind CSS utility classes (e.g. md:, lg:, 2xl:) were used extensively to:
+
+Stack elements vertically on mobile.
+
+Display grid/flex columns on tablet and desktop.
+
+Dynamically adjust spacing, padding, and typography.
+
+7. ⚡ Performance Optimizations
+Next/Image for optimized image loading.
+
+Lazy-loaded video switcher to improve initial load.
+
+Minimal external packages to reduce bundle size.
+
+Tailwind’s JIT mode ensures unused styles are purged.
+
+8. ♿ Accessibility Considerations
+Semantic HTML: Used section, header, form, button, input, and textarea tags.
+
+alt text for all images.
+
+Sufficient color contrast and focus states.
+
+Keyboard-friendly interactive elements.
+
+9. 📦 Third-party Libraries Used
+Next.js – React framework with SSR support.
+
+Tailwind CSS – Utility-first CSS framework.
+
+TypeScript – Static type checking.
+
+10. 🤔 Assumptions & Decisions
+Video files and logos were pre-supplied in the /public folder.
+
+Placeholder data used for forms and links.
+
+Default layout structured using container-based widths.
+
+Focused on frontend UI only (no backend integration).
+
+11. 🧱 Challenges & Solutions
+Challenge	Solution
+Tailwind not applying styles	Ensured content paths in tailwind.config.ts were correct.
+Video switcher interactivity	Used useState to manage the dynamic video source.
+Image alignment in navbar	Used margins and Flexbox utilities properly.
+
+12. 🚧 Upcoming Features
+Form submission with email backend/API.
+
+Animations for transitions (e.g. Framer Motion).
+
+CMS integration (e.g. Contentful or Sanity).
+
+Dynamic page routing (e.g. /applications/[type]).
+
+Unit tests using Jest and React Testing Library.
