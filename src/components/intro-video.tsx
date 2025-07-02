@@ -1,4 +1,3 @@
-import '@/styles/globals.css';
 const IntroVideo = () => {
     return (
         <section className="w-full h-screen relative overflow-hidden">
